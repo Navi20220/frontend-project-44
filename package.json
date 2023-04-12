@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/Navi20220/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Navi20220/frontend-project-44/actions)",
