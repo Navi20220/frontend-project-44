@@ -1,4 +1,4 @@
-import { getRandomNum } from '../random.js';
+import getRandomNum from '../random.js';
 import startGame from '../logic.js';
 
 const praf = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,13 +22,13 @@ const isprime = (number) => {
 
 const igra = () => {
   const number = getRandomNum(rangemin, rangemax);
-  const otvet = isprime(number) ? 'yes' : 'no';
-  const vopros = number;
-  return [otvet, vopros];
+  const answer = isprime(number) ? 'yes' : 'no';
+  const quest = number;
+  return [answer, quest];
 };
-console.log(1111, igra())
+
 const startGameprime = () => {
-    startGame(igra, praf);
+  startGame(igra, praf);
 };
-startGame()
+
 export default startGameprime;

@@ -5,11 +5,11 @@
   "description": "[![Actions Status](https://github.com/Navi20220/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Navi20220/frontend-project-44/actions)",
   "main": "index.js",
   "bin": {
+    "brain-games": "bin/brain-games.js",
     "code": "bin/brain-calc.js"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
+
     "readline-sync": "^1.4.10"
   },
   "scripts": {
@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/Navi20220/frontend-project-44#readme",
   "devDependencies": {
-    "eslint": "^8.38.0"
+    "eslint": "^8.38.0" ,
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
   }
 }

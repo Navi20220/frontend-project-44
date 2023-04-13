@@ -1,4 +1,4 @@
-import { getRandomNum } from '../random.js';
+import getRandomNum from '../random.js';
 import startGame from '../logic.js';
 
 const praf = 'Find the greatest common divisor of given numbers.';
@@ -15,13 +15,13 @@ export const gcd = (a, b) => {
 const igra = () => {
   const num1 = getRandomNum(rangemin, rangemax);
   const num2 = getRandomNum(rangemin, rangemax);
-  const vopros = `${num1} ${num2}`;
-  const otvet = gcd(num1, num2).toString();
-  return [otvet, vopros];
+  const quest = `${num1} ${num2}`;
+  const answer = gcd(num1, num2).toString();
+  return [answer, quest];
 };
 
 const startGamegcd = () => {
-    startGame(igra, praf);
+  startGame(igra, praf);
 };
-startGamegcd()
+
 export default startGamegcd;

@@ -1,4 +1,4 @@
-import { getRandomNum } from '../random.js';
+import getRandomNum from '../random.js';
 import startGame from '../logic.js';
 
 const praf = 'What is the result of the expression?';
@@ -25,14 +25,13 @@ const igra = () => {
   const num1 = getRandomNum(rangemin, rangemax);
   const num2 = getRandomNum(rangemin, rangemax);
   const operator = operators[getRandomOperator(operators)];
-  const vopros = `${num1} ${operator} ${num2}`;
-  const otvet = calculate(num1, num2, operator).toString();
-  return [otvet, vopros];
+  const quest = `${num1} ${operator} ${num2}`;
+  const answer = calculate(num1, num2, operator).toString();
+  return [answer, quest];
 };
 
 const startGameCalc = () => {
-    startGame(igra, praf);
+  startGame(igra, praf);
 };
-
 
 export default startGameCalc;
