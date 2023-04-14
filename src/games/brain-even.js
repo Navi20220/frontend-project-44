@@ -15,5 +15,5 @@ const igra = () => {
 const startGameeven = () => {
   startGame(igra, praf);
 };
-startGameeven();
+
 export default startGameeven;
