@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-import readlineSync from 'readline-sync';
+#!/usr/bin/env node]
 import cli from '../src/cli.js';
 
 cli();
